@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sports timer and scoreboard.</title>
+    <script async src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/timer.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/segment7" type="text/css"/>
+  </head>
+  <body>
+    <h1>Scoreboard</h1>
+      <table class="main">
+          <tr>
+              <td class="outer"></td>
+              <td><table>
+                <tr>
+                  <td></td>
+                  <td id='homeName'></td>
+                  <td><button class ='teamEdit' onclick="renameHome()">edit</button></td>
+                </tr>
+              </table></td>
+              <td><img src="./assets/logo.png" width="150px" ></td>
+              <td><table>
+                <tr>
+                  <td><button class ='teamEdit' onclick="renameAway()">edit</button></td>
+                  <td id='awayName'></td>
+                  <td></td>
+                </tr>
+              </table></td>
+              <td class="outer"></td>
+          </tr>
+        <tr class="scoreh">
+            <td></td>
+            <td class ="score" id='homeScore'></td>
+            <td><table><tr>
+              <td class ="time" id='timerM'></td>
+              <td class = "colon">:</td>
+              <td class ="time" id='timerS'></td>
+            </tr></table></td>
+            <td class ="score" id='awayScore'></td>
+            <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+            <table>
+                <tr>
+                    <td class="innerOuter"></td>
+                    <td><button class ='minus' id='homeMinus' onclick="minusOneToHome()">-</button></td>
+                    <td><button class ='reset' id='homeReset' onclick="resetHome()">reset</button></td>
+                    <td><button class ='plus' id='homePlus'  onclick="plusOneToHome()">+</button></td>
+                    <td class="innerOuter"></td>
+                </tr>
+            </table>
+        </td>
+        <td><table>
+            <tr>
+                <td class="innerOuter"></td>
+                <td><button id='clockStart' onclick="startTimer()">start</button></td>
+                <td><button class ='minus' id='clockMinus5'onclick="minusFiveToClock()">-5</button></td>
+                <td><button class ='minus' id='clockMinus1'onclick="minusOneToClock()">-1</button></td>
+                <td><button class ='reset' id='clockReset' onclick="resetClock()">reset</button></td>
+                <td><button class ='plus' id='clockPlus1' onclick="plusOneToClock()">+1</button></td>
+                <td><button class ='plus' id='clockPlus5' onclick="plusFiveToClock()">+5</button></td>
+                <td><button id='clockStop' onclick="stopTimer()">stop</button></td>
+                <td class="innerOuter"></td>
+            </tr>
+        </table></td>
+        <td>
+            <table>
+                <tr>
+                    <td class="innerOuter"></td>
+                    <td><button class ='minus' id='awayMinus' onclick="minusOneToAway()">-</button></td>
+                    <td><button class ='reset' id='awayReset' onclick="resetAway()">reset</button></td>
+                    <td><button class ='plus' id='awayPlus'  onclick="plusOneToAway()">+</button></td>
+                    <td class="innerOuter"></td>
+                </tr>
+            </table>
+        </td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>
