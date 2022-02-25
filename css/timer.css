@@ -1,1 +1,86 @@
-
+body {background-color: black;}
+table {
+    width: 100%;
+}
+.scoreh {
+    height: 250px;
+}
+td {
+text-align: center;
+    }
+button {
+    background-color: rgb(92, 92, 92);
+    font-size: 30px;
+    font-weight: bold;
+    border: 3px solid black;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+}
+button#clockStart {
+    background-color: #4CAF50; /* Green */
+}
+button#clockStop {
+    background-color: rgb(170, 46, 46);
+}
+button.plus {
+    background-color: rgb(65, 91, 241);
+}
+button.teamEdit {
+    padding: 5px;
+    font-size: 15px;
+}
+button.minus {
+    background-color: rgb(107, 134, 221);
+}
+button.reset {
+    color: white;
+    background-color: red;
+}
+button:hover {
+    border: 3px solid white;
+}
+#homeName {
+    color: yellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 75px;
+}
+#awayName {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 75px;
+}
+.score {
+font-family: 'Segment7Standard';
+background-color: black;
+padding: 35px;
+font-size: 300px;
+color: red;
+border: 10px solid red;
+border-radius: 50px;
+}
+.time {
+font-family: 'Segment7Standard';
+background-color: black;
+padding: 35px;
+font-size: 300px;
+color: white;
+width: 40%;
+}
+.colon {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    padding: 0px;
+    font-size: 200px;
+    color: white;
+    width: 0%;
+    }
+.outer {
+    width: 10%;
+}
+.innerOuter {
+    width: 15%;
+}
